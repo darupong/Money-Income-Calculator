@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Main Windows" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
+        <TextBlock HorizontalAlignment="Left" Margin="353,52,0,0" TextWrapping="Wrap" Text="คำนวนรายรับรายจ่าย" VerticalAlignment="Top" FontSize="18" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="income" HorizontalAlignment="Left" Height="23" Margin="299,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="pay" HorizontalAlignment="Left" Height="23" Margin="299,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" TextChanged="surname_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="243,140,0,0" TextWrapping="Wrap" Text="รายรับ" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="236,183,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button Content="คำนวน" HorizontalAlignment="Left" Margin="174,287,0,0" VerticalAlignment="Top" Width="102" Height="35" Background="#FFFF5E5E" FontFamily="Comic Sans MS" Click="Button_Click"/>
+        <TextBox x:Name="need" HorizontalAlignment="Left" Height="23" Margin="299,224,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" TextChanged="surname_Copy_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="181,230,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="487,144,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS" RenderTransformOrigin="0.651,2.133"/>
+        <TextBlock HorizontalAlignment="Left" Margin="487,186,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS" RenderTransformOrigin="0.651,2.133"/>
+        <TextBlock HorizontalAlignment="Left" Margin="487,224,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS" RenderTransformOrigin="0.651,2.133"/>
+        <TextBlock HorizontalAlignment="Left" Margin="181,230,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="299,296,0,0" TextWrapping="Wrap" Text="คุณต้องเก็บเงินทั้งหมด" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="DayTextBox" HorizontalAlignment="Left" Height="23" Margin="423,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" TextChanged="surname_Copy_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="487,300,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Comic Sans MS" RenderTransformOrigin="0.651,2.133"/>
+
+    </Grid>
+</Window>
